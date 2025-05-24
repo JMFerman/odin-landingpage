@@ -1,3 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #F3F4F6;
+}
+
 nav {
     background-color: #1F2937;
       padding: 20px 0;
@@ -17,9 +24,124 @@ nav a {
       flex: 1;
         text-align: center;
      }
+nav a:hover {
+      background-color: #374151;
+      color: #F3F4F6;
+      transition: background-color 0.3s ease;
+}
 
      .hero-image {
         width: 100%;
         height: auto;
+        max-height: 900px;
+        object-fit: cover;
      }
 
+.slogan {
+position: absolute;
+text-align: left;
+bottom: 60%;
+right: 55%;
+padding-left: 50px;
+}
+
+.page-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding-bottom: 20px;
+    font-style: italic
+}
+
+.container2 {
+  background-color: #374151;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.title2 {
+  text-align: center;
+  font-size: 36px;
+  color: #F3F4F6;
+  padding: 30px 0;
+  font-weight: bold;
+  margin-top: 0
+}
+
+ .lenses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.lens-container {
+    border: 2px solid;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.lens-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.lens-name {
+  font-size: 36px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.lens-info {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  color: #374151;
+}
+
+
+
+@media (max-width: 768px) {
+  #hero {
+    background-color: #1F2937;
+  }
+    .hero-image {
+        height: 300px;
+    }
+
+    .slogan {
+        position: relative;
+        bottom: 20%;
+        text-align: center;
+        right: 0;
+        padding: 0 20px;
+    }
+
+    .page-title {
+        font-size: 15px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .lenses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lens-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+} 
